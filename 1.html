@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+</head>
+<body>
+<!--
+Обязательное задание.
+
+Необходимо с помощью цикла for вывести следующие 11 строк в консоль:
+0 – это ноль
+1 – нечетное число
+2 – четное число
+3 – нечетное число
+…
+10 – четное число
+-->
+<script>
+  "use strict";
+  /**
+   * Проверяет параметр на 0 и четность/нечетность
+   * @param {number} num - число
+   * @return {string} определение числа
+   */
+  function checkNumber(num) {
+    if (num === 0) {
+	  return 'это ноль';
+	} else if (num % 2 === 0) {
+	  return 'это четное число';
+	} else {
+	  return 'это нечетное число';
+	}
+  }
+  
+  for (let i = 0; i < 11; i++) {
+    console.log(`${i} - ${checkNumber(i)}`);
+  }
+</script>
+</body>
+</html>
