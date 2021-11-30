@@ -44,7 +44,6 @@
     },
   ];
 
-  console.log(products.filter((product) => "photos" in product && product.photos.length !== 0));
   console.log(products.filter(function checkPhoto(item) {
     return "photos" in item && item.photos.length !== 0
   }));
